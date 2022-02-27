@@ -1,0 +1,14 @@
+.page {
+  position: relative;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--special-dark-gray);
+  background-color: var(--basic-white);
+}

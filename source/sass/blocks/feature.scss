@@ -1,0 +1,14 @@
+.feature {
+  @include order-reset;
+}
+
+.feature__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.feature__text {
+  width: 72%;
+  margin: 0;
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+}

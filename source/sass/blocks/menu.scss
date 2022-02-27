@@ -1,0 +1,26 @@
+.menu {
+  @include order-reset;
+}
+
+.menu__item {
+  padding: 22px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid var(--basic-decorative-color);
+}
+
+.menu__link:focus {
+  outline: 1px solid var(--basic-black-60);
+}
+
+.menu__link:hover {
+  color: var(--basic-black-60);
+}
+
+.menu__link:active {
+  color: var(--basic-black-30);
+}

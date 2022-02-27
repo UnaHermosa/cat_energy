@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--basic-green);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+
+  &:focus {
+    outline: 3px solid var(--basic-black-60);
+  }
+
+  &:hover {
+    background-color: var(--special-green-hover);
+  }
+
+  &:active {
+    background-color: var(--special-green-hover);
+    color: var(--basic-white-30);
+  }
+
+  &--slider {
+    background-color: var(--basic-white);
+  }
+}

@@ -1,0 +1,17 @@
+.slider {
+  @include order-reset;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item-active {
+  display: block;
+}
+
+.slider__toggle-button-text {
+  color: var(--basic-black);
+  line-height: 20px;
+  text-transform: uppercase;
+}
