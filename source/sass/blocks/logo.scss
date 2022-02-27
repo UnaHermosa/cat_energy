@@ -1,3 +1,15 @@
+.logo:focus {
+  outline: 1 px solid var(--basic-black-60);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
 .logo__text {
   font-size: 20px;
   line-height: 20px;

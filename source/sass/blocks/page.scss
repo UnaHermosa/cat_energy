@@ -1,4 +1,5 @@
 .page {
+  box-sizing: border-box;
   position: relative;
   min-width: 320px;
   height: 100%;
@@ -11,4 +12,18 @@
   font-style: normal;
   color: var(--special-dark-gray);
   background-color: var(--basic-white);
+}
+
+.page__main {
+  padding-top: 27px;
+}
+
+.page__main-title {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0 20px;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+  font-weight: 400;
 }
