@@ -1,5 +1,9 @@
 .page-footer__contacts {
   padding: 28px 20px;
+
+  &--inner {
+    background-color: var(--light-gray-2);
+  }
 }
 
 .page-footer__socials {
