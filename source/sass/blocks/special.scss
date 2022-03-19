@@ -8,6 +8,7 @@
   @media (min-width: 768px) {
     background-color: var(--basic-white);
     padding: 43px 30px 64px;
+
     &::after {
       position: absolute;
       content: "";

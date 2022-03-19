@@ -4,10 +4,12 @@
 
 .feature__item {
   position: relative;
+
   @media (min-width: 768px) {
     width: 250px;
     padding-top: 111px;
     padding-bottom: 55px;
+
     &::after {
       position: absolute;
       counter-increment: section;
