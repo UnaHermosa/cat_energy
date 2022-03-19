@@ -1,3 +1,19 @@
 .programms {
   margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 71px;
+  }
+}
+
+.programms__list {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
 }

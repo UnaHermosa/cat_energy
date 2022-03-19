@@ -1,3 +1,8 @@
+.logo {
+  display: flex;
+  margin: 0 auto;
+}
+
 .logo:focus {
   outline: 1 px solid var(--basic-black-60);
 }
@@ -11,6 +16,7 @@
 }
 
 .logo__text {
+  display: block;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;

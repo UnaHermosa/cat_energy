@@ -1,4 +1,5 @@
 .contacts__text {
+  width: 50%;
   color: var(--dark-gray);
   text-transform: uppercase;
   font-weight: 400;
@@ -7,4 +8,11 @@
 .contacts__address {
   margin: 0;
   font-family: "Arial", sans-serif;
+}
+
+.contacts__address-text {
+  @media (min-width: 768px) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

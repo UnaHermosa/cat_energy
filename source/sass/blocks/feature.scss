@@ -2,8 +2,33 @@
   @include order-reset;
 }
 
+.feature__item {
+  position: relative;
+  @media (min-width: 768px) {
+    width: 250px;
+    padding-top: 111px;
+    padding-bottom: 55px;
+    &::after {
+      position: absolute;
+      counter-increment: section;
+      content: counter(section);
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--light-gray-2);
+      right: 0;
+      top: -20px;
+      text-align: center;
+      z-index: -1;
+    }
+  }
+}
+
 .feature__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 80px;
+  }
 }
 
 .feature__text {
@@ -11,4 +36,9 @@
   margin: 0;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    padding-left: 0;
+  }
 }

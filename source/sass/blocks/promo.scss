@@ -1,6 +1,15 @@
 .promo {
+  box-sizing: border-box;
   position: relative;
   margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 82px;
+  }
 }
 
 .promo__wrapper {
@@ -14,6 +23,7 @@
   background-size: 107%;
   background-position: -10px 0;
   background-repeat: no-repeat;
+  z-index: -1;
 
   &::after {
     position: absolute;
@@ -24,6 +34,38 @@
     opacity: 0.85;
     top: 0;
     left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    background: none;
+    &::after {
+      width: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    top: -112px;
+    left: 50%;
+    background-color: var(--basic-green);
+    background-image: url("../../img/index-background.jpg");
+    background-size: 80%;
+    background-position: -10px 0;
+    background-repeat: no-repeat;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 694px;
+      background-color: var(--basic-green);
+      opacity: 0.85;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
@@ -39,6 +81,22 @@
   color: var(--basic-white);
   text-align: center;
   z-index: 2;
+
+  @media (min-width: 768px) {
+    width: 414px;
+    margin-left: 12.5%;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--basic-black);
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 13%;
+    padding-top: 111px;
+  }
 }
 
 .promo__slogan {
@@ -50,9 +108,42 @@
   color: var(--basic-white);
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin-left: 12.5%;
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--basic-black);
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 13%;
+    margin-bottom: 52px;
+  }
 }
 
 .promo__img {
+  display: block;
+  margin: 0 auto;
   position: relative;
   z-index: 3;
+
+  @media (min-width: 768px) {
+    z-index: 1;
+  }
+}
+
+.promo__button {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 244px;
+    margin-left: 12.5%;
+    top: -270px;
+    z-index: 2;
+  }
 }

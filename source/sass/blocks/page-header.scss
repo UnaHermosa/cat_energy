@@ -1,6 +1,15 @@
+.page-header {
+  @media (min-width: 768px) {
+    padding: 25px 30px 0;
+  }
+}
+
 .page-header__navigation {
   position: relative;
   padding-top: 12px;
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .page-header__toggler {

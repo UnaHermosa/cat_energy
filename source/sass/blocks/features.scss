@@ -1,3 +1,34 @@
 .features {
-  margin-bottom: 42px;
+  padding-bottom: 42px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 47px;
+    border-bottom: 1px solid var(--basic-decorative-color);
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 72px;
+    border: none;
+  }
+}
+
+.features__title {
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 72px;
+  }
+}
+
+.features__list {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 88px 208px;
+
+    @media (min-width: 1440px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0 73px;
+    }
+  }
 }
