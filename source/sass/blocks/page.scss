@@ -15,29 +15,36 @@
 }
 
 .page__main {
+  box-sizing: border-box;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
   min-width: 320px;
   margin: 0;
-  padding: 27px 20px 32px;
+  padding: 27px 0 32px;
 
   @media (min-width: 768px) {
-    padding: 65px 70px 72px;
+    padding: 65px 0 72px;
   }
 
   @media (min-width: 768px) {
-    padding: 77px 110px 82px;
+    padding: 77px 0 82px;
   }
 }
 
 .page__main-title {
   margin: 0;
+  margin-left: 22px;
   margin-bottom: 37px;
   color: var(--basic-black);
   font-weight: 400;
 
   @media (min-width: 768px) {
+    margin-left: 71px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 110px;
   }
 }
