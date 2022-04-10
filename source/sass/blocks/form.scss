@@ -2,9 +2,23 @@
   width: 82%;
   margin: 0;
   margin-bottom: 39px;
-  padding: 0 20px;
   color: var(--basic-black);
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 323px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__wrapper-field {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 80px;
+  }
 }
 
 .form__fieldset {
@@ -13,6 +27,22 @@
   padding-bottom: 24px;
   border: none;
   border-bottom: 1px solid var(--basic-gray);
+
+  @media (min-width: 768px) {
+    padding-bottom: 72px;
+    border: none;
+
+    &--contact,
+    &--comment {
+      padding-bottom: 65px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &--info {
+      width: 100%;
+    }
+  }
 }
 
 .form__fieldset:last-of-type {
@@ -20,8 +50,15 @@
 }
 
 .form__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__container:last-of-type {
@@ -30,6 +67,12 @@
 
 .form__label {
   text-transform: uppercase;
+  align-self: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__input {
@@ -55,13 +98,13 @@
     color: var(--special-dark-gray);
     text-transform: uppercase;
   }
-}
 
-.form__list {
-  padding: 22px 20px 0;
-
-  &--checkbox {
-    padding-top: 0;
+  @media (min-width: 768px) {
+    padding: 11px 18px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -72,16 +115,58 @@
   font-size: 24px;
   line-height: 26px;
   color: var(--basic-black);
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--extra {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px 15px;
+  border: 1px solid var(--extra-decorative-color);
+  @media (min-width: 768px) {
+    padding: 10px 20px;
+  }
 }
 
 .form__textarea::placeholder {
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__submit-wrapper {
+  display: flex;
 }
 
 .form__submit {
   margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    width: 282px;
+    margin-right:61px;
+    margin-bottom: 0;
+  }
 }
 
 .form__annotation {
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
