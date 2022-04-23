@@ -48,6 +48,7 @@
   @media (min-width: 768px) {
     padding-bottom: 0;
     border: none;
+    align-self: center;
   }
 }
 
@@ -60,6 +61,16 @@
 }
 
 .page-footer__link {
+  display: flex;
   font-family: "Arial", sans-serif;
   color: var(--special-dark-gray);
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link-text {
+  margin-right: 16px;
+  align-self: center;
 }

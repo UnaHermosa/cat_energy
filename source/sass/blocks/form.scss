@@ -136,6 +136,12 @@
   margin-bottom: 0;
 }
 
+.form__container--email {
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
+}
+
 .form__label {
   text-transform: uppercase;
   align-self: center;

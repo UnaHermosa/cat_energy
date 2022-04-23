@@ -31,11 +31,29 @@
     line-height: 20px;
     background-color: var(--light-gray-2);
     color: inherit;
+
+    &:hover {
+      background-color: var(--light-gray-4);
+    }
+
+    &:active {
+      background-color: var(--light-gray-4);
+      color: var(--special-dark-gray-30);
+    }
   }
 
   @media (min-width: 768px) {
     padding: 14px 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    &--catalog {
+      width: 244px;
+      margin-left: 38px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
   }
 }
