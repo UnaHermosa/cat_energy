@@ -1,3 +1,11 @@
+.contacts--inner {
+  background-color: var(--light-gray-2);
+
+  @media (min-width: 1440px) {
+    background-color: var(--basic-white);
+  }
+}
+
 .contacts__text {
   width: 50%;
   color: var(--dark-gray);

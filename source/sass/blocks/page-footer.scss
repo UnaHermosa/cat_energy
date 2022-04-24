@@ -8,10 +8,6 @@
   justify-content: space-between;
   padding: 28px 20px;
 
-  &--inner {
-    background-color: var(--light-gray-2);
-  }
-
   @media (min-width: 768px) {
     padding: 66px 71px 58px;
     font-size: 20px;
