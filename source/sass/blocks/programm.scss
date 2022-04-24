@@ -24,19 +24,84 @@
 }
 
 .programm__title {
+  position: relative;
   margin: 0;
   margin-bottom: 29px;
+  padding-left: 71px;
   font-size: 24px;
   line-height: 37px;
   font-weight: inherit;
   color: var(--basic-black);
-  text-align: center;
   text-transform: uppercase;
+
+  &--slim::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 52px;
+    top: -10px;
+    left: 0;
+    background-image: url("../../img/cat_slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 2;
+  }
+
+  &--pro::before {
+    position: absolute;
+    content: "";
+    width: 77px;
+    height: 50px;
+    top: -7px;
+    left: -15px;
+    background-image: url("../../img/cat_pro.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 0;
+    z-index: 2;
+  }
 
   @media (min-width: 768px) {
     margin-bottom: 24px;
+    padding: 0;
     font-size: 36px;
     text-align: left;
+
+    &--slim::before {
+      width: 200px;
+      height: 211px;
+      top: 5px;
+      left: 66%;
+      background-size: contain;
+    }
+
+    &--pro::before {
+      width: 280px;
+      height: 200px;
+      top: 5px;
+      left: 59.5%;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 73px;
+    padding-left: 161px;
+
+    &--slim::before {
+      width: 100px;
+      height: 106px;
+      top: -35px;
+      left: 10px;
+      background-size: contain;
+    }
+
+    &--pro::before {
+      width: 150px;
+      height: 100px;
+      top: -35px;
+      left: -23px;
+      background-size: contain;
+    }
   }
 }
 
@@ -48,15 +113,22 @@
   border-bottom: 1px solid var(--basic-gray);
 
   @media (min-width: 768px) {
-    width: 55%;
+    width: 62%;
     padding-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--basic-black);
     border-bottom: none;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
   }
 }
 
 .programm__button {
-  display: block;
+  position: relative;
+  display: inline-block;
   padding-top: 19px;
   font-size: 16px;
   line-height: 16px;
@@ -69,6 +141,34 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: -45px;
+    bottom: 5px;
+    border: 6px solid transparent;
+    border-left: 7px solid var(--basic-black);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: -32px;
+    bottom: 10px;
+    width: 17px;
+    height: 2px;
+    background-color: var(--basic-black);
+  }
+
+  &:hover::after {
+    width: 25px;
+    right: -37px;
+  }
+
+  &:hover::before {
+    right: -50px;
   }
 
   @media (min-width: 768px) {

@@ -1,10 +1,32 @@
 .social {
   @include order-reset;
+  width: 130px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid var(--basic-gray);
 
   @media (min-width: 768px) {
     padding: 0;
     border: none;
   }
+}
+
+.social__link:hover path {
+  fill: var(--basic-green);
+}
+
+.social__link-fb:hover path {
+  fill: none;
+  stroke: var(--basic-green);
+}
+
+.social__link:active path {
+  fill: var(--basic-green-30);
+}
+
+.social__link-fb:active path {
+  fill: none;
+  stroke: var(--basic-green-30);
 }

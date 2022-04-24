@@ -4,11 +4,30 @@
 
 .feature__item {
   position: relative;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+
+  &--healthy {
+    background-image: url("../../img/leaf.svg");
+  }
+
+  &--instant {
+    background-image: url("../../img/boil.svg");
+  }
+
+  &--eating {
+    background-image: url("../../img/dish.svg");
+  }
+
+  &--time {
+    background-image: url("../../img/time.svg");
+  }
 
   @media (min-width: 768px) {
     width: 250px;
     padding-top: 111px;
     padding-bottom: 55px;
+    background-size: 80px 80px;
 
     &::after {
       position: absolute;
@@ -17,8 +36,8 @@
       font-size: 280px;
       line-height: 280px;
       color: var(--light-gray-2);
-      right: 0;
-      top: -20px;
+      right: 18px;
+      top: -37px;
       text-align: center;
       z-index: -1;
     }
@@ -31,10 +50,15 @@
   @media (min-width: 768px) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 }
 
 .feature__text {
   width: 72%;
+  min-height: 60px;
   margin: 0;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
@@ -42,5 +66,7 @@
   @media (min-width: 768px) {
     width: 90%;
     padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
