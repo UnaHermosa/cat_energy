@@ -35,8 +35,43 @@
 .cards__item:last-child {
   background-color: var(--basic-white);
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 2px;
+    background-color: var(--light-gray-3);
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 2px;
+    background-color: var(--light-gray-3);
+  }
+
   @media (min-width: 768px) {
     border: 2px solid var(--light-gray-2);
+
+    &::before {
+      top: 82px;
+      width: 60px;
+    }
+
+    &::after {
+      top: 82px;
+      width: 60px;
+    }
   }
 }
 
@@ -99,7 +134,7 @@
   &--last {
     margin: 0 auto;
     margin-bottom: 5px;
-    padding-top: 82px;
+    padding-top: 53px;
     text-transform: uppercase;
   }
 
@@ -153,24 +188,11 @@
   font-size: 12px;
   line-height: 16px;
 
-  &--last {
-    margin: 0 auto;
-    margin-bottom: 21px;
-    text-align: center;
-  }
-
   @media (min-width: 768px) {
     padding-top: 7px;
     padding-bottom: 9px;
     font-size: 16px;
     border-bottom: 1px solid var(--light-gray-radio);
-
-    &--last {
-      width: 60%;
-      padding: 0;
-      text-align: center;
-      border-bottom: none;
-    }
   }
 
   @media (min-width: 1440px) {
@@ -180,4 +202,18 @@
 
 .cards__column:nth-child(2n) {
   text-align: right;
+}
+
+.cards__item:last-child .cards__column {
+  margin: 0 auto;
+  margin-bottom: 21px;
+  text-align: center;
+  border-bottom: none;
+
+  @media (min-width: 768px) {
+    width: 60%;
+    padding: 0;
+    text-align: center;
+    border-bottom: none;
+  }
 }

@@ -2,6 +2,10 @@
   @include order-reset;
   padding: 22px 0 0;
 
+  &--checkbox {
+    padding-top: 0;
+  }
+
   @media (min-width: 768px) {
     &--radio {
       padding: 29px 27px;
