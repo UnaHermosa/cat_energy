@@ -25,6 +25,10 @@
   background-repeat: no-repeat;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-background@2x.jpg");
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -52,10 +56,15 @@
     top: -112px;
     left: 50%;
     background-color: var(--basic-green);
-    background-image: url("../../img/index-background.jpg");
-    background-size: 80%;
-    background-position: -10px 0;
+    background-image: url("../../img/index-background-desktop.jpg");
+    background-size: cover;
+    background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
 
     &::after {
       position: absolute;
@@ -112,7 +121,7 @@
 
   @media (min-width: 768px) {
     margin-left: 12.5%;
-    margin-bottom: 49px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
     color: var(--basic-black);
@@ -131,8 +140,9 @@
   position: relative;
   z-index: 3;
 
-  @media (min-width: 768px) {
-    z-index: 1;
+  @media (min-width: 1440px) {
+    margin-top: -300px;
+    left: 7.8%;
   }
 }
 
@@ -144,7 +154,12 @@
   @media (min-width: 768px) {
     width: 244px;
     margin-left: 12.5%;
-    top: -270px;
-    z-index: 2;
+    top: -589px;
+    z-index: 4;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 13%;
+    top: -189px;
   }
 }

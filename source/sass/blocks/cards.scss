@@ -90,7 +90,6 @@
   position: relative;
   order: 1;
   width: 140px;
-  height: auto;
   padding-top: 15px;
   text-align: center;
 
@@ -101,15 +100,14 @@
 }
 
 .cards__img {
+  position: absolute;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -44px;
   }
 }
 
