@@ -26,6 +26,7 @@
   @media (min-width: 768px) {
     flex-direction: column;
     padding: 0;
+    padding-top: 161px;
     padding-bottom: 40px;
     background-color: var(--light-gray-2);
     border-bottom: none;
@@ -79,9 +80,11 @@
   order: 2;
   width: 50%;
   margin-left: auto;
+  padding-bottom: 22px;
 
   @media (min-width: 768px) {
     width: 100%;
+    padding-bottom: 33px;
   }
 }
 
@@ -90,7 +93,6 @@
   position: relative;
   order: 1;
   width: 140px;
-  padding-top: 15px;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -100,15 +102,11 @@
 }
 
 .cards__img {
-  position: absolute;
   display: block;
-  top: 10px;
+  position: absolute;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-
-  @media (min-width: 768px) {
-    top: -44px;
-  }
 }
 
 .cards__order-button {
@@ -139,8 +137,8 @@
   @media (min-width: 768px) {
     width: 40%;
     margin: 0 auto;
-    padding-top: 165px;
     margin-bottom: 21px;
+    padding-top: 0;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
