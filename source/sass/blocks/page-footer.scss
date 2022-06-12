@@ -77,16 +77,18 @@
   font-family: "Arial", sans-serif;
   color: var(--special-dark-gray);
 
-  &:hover path {
+  &:hover svg {
     fill: var(--basic-green);
+    stroke: var(--basic-green);
   }
 
   &:active {
     color: var(--special-dark-gray-30);
   }
 
-  &:active path {
+  &:active svg {
     fill: var(--basic-green-30);
+    stroke: var(--basic-green-30);
   }
 }
 

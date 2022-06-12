@@ -136,11 +136,20 @@
 
 .promo__img {
   display: block;
+  width: 280px;
+  height: 270px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
 
+  @media (min-width: 768px) {
+    width: 709px;
+    height: 609px;
+  }
+
   @media (min-width: 1440px) {
+    width: 552px;
+    height: 499px;
     margin-top: -300px;
     left: 7.8%;
   }

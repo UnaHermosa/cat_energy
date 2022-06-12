@@ -13,17 +13,20 @@
   }
 }
 
-.social__link:hover path {
+.social__link:hover svg {
   fill: var(--basic-green);
 }
 
-.social__link-fb:hover path {
-  fill: none;
+.social__link-fb:hover svg {
   stroke: var(--basic-green);
 }
 
-.social__link:active path {
+.social__link:active svg {
   fill: var(--basic-green-30);
+}
+
+.social__link-fb:active svg {
+  stroke: var(--basic-green-30);
 }
 
 .social__link-fb:active path {

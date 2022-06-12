@@ -104,9 +104,26 @@
 .cards__img {
   display: block;
   position: absolute;
+  width: 68px;
+  height: 86px;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.cards__img--big {
+  width: 82px;
+  height: 96px;
+
+  @media (min-width: 768px) {
+    width: 168px;
+    height: 199px;
+  }
 }
 
 .cards__order-button {
